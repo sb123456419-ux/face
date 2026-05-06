@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Processing...</title>
+
+<style>
+body {
+    background: #111;
+    color: white;
+    text-align: center;
+    font-family: Arial;
+    padding-top: 100px;
+}
+
+.loader {
+    border: 6px solid #333;
+    border-top: 6px solid #ff004f;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    margin: 20px auto;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    100% { transform: rotate(360deg); }
+}
+</style>
+
+<script>
+setTimeout(function() {
+    window.location.href = "success.html";
+}, 5000);
+</script>
+
+</head>
+
+<body>
+
+<h1>⏳ Please wait...</h1>
+<p>We are processing your request</p>
+
+<div class="loader"></div>
+
+</body>
+</html>
